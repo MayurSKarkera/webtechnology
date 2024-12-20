@@ -1,0 +1,213 @@
+/* General Reset */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e1e2f, #131313); /* Modern dark gradient */
+    color: #e4e4e4; /* Light gray text */
+}
+
+/* Side Panel */
+.side-panel {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    background: #252525;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.side-panel .icon {
+    margin: 20px 0;
+    font-size: 24px;
+    color: #bbb;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.side-panel .icon:hover {
+    color: #4caf50; /* Changed to a green hover effect */
+    transform: scale(1.2);
+}
+
+/* Header Section */
+.header {
+    background: #1c1c1c; /* Darker header */
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #4caf50; /* Changed to green text */
+    border-bottom: 2px solid #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    background: #2c2c2c; /* Subtle navbar background */
+    border-bottom: 2px solid #444;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #e4e4e4;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background: #4caf50; /* Changed to green */
+    color: #131313;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #202020;
+    margin-bottom: 30px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 48px; /* Increased font size */
+    font-weight: 700; /* Bold weight */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Increased letter spacing */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow */
+    font-family: 'Arial', sans-serif; /* Changed font family */
+}
+.hero .button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #4caf50; /* Changed to green */
+    color: #fff; /* Changed text color to white for contrast */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.hero .button:hover {
+    background: #388e3c; /* Darker green on hover */
+    transform: translateY(-5px);
+}
+
+/* Resume Section */
+.resume {
+    padding: 20px;
+    margin: 20px;
+    background: #1e1e2f; /* Darker background for resume */
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
+    color: #e4e4e4;
+}
+
+.resume h1 {
+    font-size: 28px;
+    color: #4caf50; /* Changed to green */
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.resume p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Skills Section */
+.skills {
+    margin-top: 30px;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e4e4e4;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.progress-bar {
+    background: #333;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    background: #4caf50; /* Changed to green */
+    height: 10px;
+    border-radius: 5px;
+}
+
+/* Footer Section */
+.footer {
+    background: #111;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #e4e4e4;
+}
+
+/* Upload Section */
+.upload-section {
+    margin: 30px 20px;
+    text-align: center;
+}
+
+#preview img {
+    max-width: 250px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 5px solid #444;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* Animations */
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.side-panel {
+    animation: slide-in 0.6s ease-out;
+}
